@@ -8,6 +8,11 @@ import java.net.*;
 public class ChatClient {
     public static void main(String[] args) {
         
+        
+        
+        
+        
+        
         try (Socket socket = new Socket("localhost", 5500); 
              BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream())); // For reading server messages
              PrintWriter out = new PrintWriter(socket.getOutputStream(), true); // For sending messages to the server

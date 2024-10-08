@@ -11,10 +11,12 @@ public class ChatServer {
     public static void main(String[] args) {
        
         try (ServerSocket serverSocket = new ServerSocket(5500)) { // Server listens on port 12345
-            System.out.println("Server started... Waiting for clients to connect...");
+            System.out.println("Server started....... Waiting for clients to connect...");
+            
 
             while (true) {
                 // Accept a new client connection
+                //This line also serve as instruction
                 Socket clientSocket = serverSocket.accept();
                 
                 // Create a new handler for this client and start its thread
